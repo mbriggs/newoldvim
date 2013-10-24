@@ -1,0 +1,1 @@
+noremap <d-;> :TComment<cr>
