@@ -1,18 +1,13 @@
-CHDIR_SHELL := $(SHELL)
-define chdir
-   $(eval _D=$(firstword $(1) $(@D)))
-   $(info $(MAKE): cd $(_D)) $(eval SHELL = cd $(_D); $(CHDIR_SHELL))
-endef
-
-install: directories links install_vundle vundle ycm_build/install_ycm install_complete
+install: directories links install_vundle vundle install_ycm install_complete
 
 vundle:
 	vim +BundleInstall +qall
 
-ycm_build/install_ycm:
-	$(call chdir)
-	cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/cpp
-	make ycm_core
+install_command_t:
+	cd bundle/Command-T/ruby/command-t; ruby extconf.rb; make
+
+install_ycm:
+	cd ycm_build; cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/cpp; make ycm_core
 
 install_vundle:
 	git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle

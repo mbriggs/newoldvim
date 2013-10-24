@@ -1,3 +1,6 @@
+" W to go back a word -- frees up b for moar bindings
+nnoremap W b
+
 " tab indents (insert mode covered by tabindent)
 nnoremap <tab> ==
 vnoremap <tab> ==
