@@ -4,7 +4,7 @@ vundle:
 	vim +BundleInstall +qall
 
 install_command_t:
-	cd bundle/Command-T/ruby/command-t; ruby extconf.rb; make
+	cd bundle/Command-T/ruby/command-t; rvm system; env ARCHFLAGS="-arch x86_64" ruby extconf.rb; env ARCHFLAGS="-arch x86_64" make
 
 install_ycm:
 	cd ycm_build; cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/cpp; make ycm_core
