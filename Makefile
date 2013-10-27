@@ -1,4 +1,5 @@
-install: directories links install_vundle vundle install_ycm install_complete
+install: directories links install_vundle vundle install_ycm install_complete install_command_t install_tern
+
 
 vundle:
 	vim +BundleInstall +qall
@@ -8,6 +9,9 @@ install_command_t:
 
 install_ycm:
 	cd ycm_build; cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/cpp; make ycm_core
+
+install_tern:
+	cd bundle/tern_for_vim; npm install
 
 install_vundle:
 	git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle

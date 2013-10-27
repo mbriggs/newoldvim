@@ -1,6 +1,3 @@
-" W to go back a word -- frees up b for moar bindings
-nnoremap W b
-
 " tab indents (insert mode covered by tabindent)
 nnoremap <tab> ==
 vnoremap <tab> ==
@@ -30,6 +27,9 @@ nmap <right> g,
 imap <C-BS> <C-W>
 cmap <C-BS> <C-W>
 
+" Fast search pair.
+nnoremap [Space]p %
+xnoremap [Space]p %
 
 "" Hit return to clear a search
 nnoremap <silent> <expr> <CR> &bt == "" ? ":nohlsearch<CR>" : "\<CR>"

@@ -1,0 +1,47 @@
+snippet req "require (js)" b
+require("$1");$0
+endsnippet
+
+snippet opt "assign an option (js)" b
+this.${1:property} = options.$1;$0
+endsnippet
+
+snippet def "commonjs module define (js)" b
+define("${1:module name}", function(module){$0});
+endsnippet
+
+snippet con "console.log (js)" b
+console.log($0);
+endsnippet
+
+snippet f "function without args (js)" b
+function(){$0}
+endsnippet
+
+snippet fun "function with an argument (js)" b
+function(${1:arguments}){$0}
+endsnippet
+
+snippet us "strict mode (js)" b
+"strict mode";$0
+endsnippet
+
+snippet desc "Describe (js)" b
+describe('${1:description}', function() {$0});
+endsnippet
+
+snippet it "it (js)" b
+it('${1:description}', function(){$0});
+endsnippet
+
+snippet befe "before each (js)" b
+beforeEach(function(){$0});
+endsnippet
+
+snippet afte "after each (js)" b
+afterEach(function(){$0});
+endsnippet
+
+snippet ex "expect (js)" b
+expect(${1:target})$0;
+endsnippet

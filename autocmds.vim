@@ -56,3 +56,11 @@ function! s:smart_close()
     close
   endif
 endfunction
+
+let g:jscomplete_use = ['dom']
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType vim set omnifunc=syntaxcomplete#Complete
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType c set omnifunc=ccomplete#Complete

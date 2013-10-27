@@ -2,8 +2,8 @@ set showcmd                         " show commands in the lower right hand corn
 set backupdir=~/.vim/backup         " save backups to .vim/backup
 set directory=~/.vim/backup         " save .swp files to .vim/backup
 set undodir=~/.vim/backup           " persistant undo
-set undofile                        "
-set undolevels=1000                 "
+set undofile                        " save undo info
+set undolevels=1000                 " for a long time
 set undoreload=10000                "
 filetype plugin indent on           " load the plugin and indent settings for the detected filetype
 set backspace=indent,eol,start      " allow backspacing over everything in insert mode
@@ -38,12 +38,10 @@ let mapleader=','                   " leader
 let maplocalleader=',,'             " localleader
 set wildignore+=.git,.hg,node_modules,tmp
 
-if has("gui_running")
-  colorscheme solarized
-else
+if !has("gui_running")
   let &t_Co=256
-  colorscheme ir_black
 endif
+colorscheme jellybeans
 
 if version >= 703
   " set margin

@@ -46,7 +46,16 @@ Bundle 'bling/vim-airline'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'SirVer/ultisnips'
 Bundle 'tpope/vim-dispatch'
+Bundle 'myusuf3/numbers.vim'
+Bundle 'kana/vim-tabpagecd'
+Bundle 'int3/vim-extradite'
+Bundle 'kana/vim-scratch'
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
 " Bundle 'mhinz/vim-signify'
+
+" support
+Bundle 'dbakker/vim-projectroot'
 
 " snipmate
 " Bundle "MarcWeber/vim-addon-mw-utils"
