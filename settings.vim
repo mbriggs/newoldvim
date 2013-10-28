@@ -48,7 +48,7 @@ if version >= 703
   set colorcolumn=85
 endif
 
-set guifont=Source\ Code\ Pro\ for\ Powerline:h14
+set guifont=Source\ Code\ Pro\ for\ Powerline:h15
 
 " this is to drop all scrollbars sort of a hacky way to do it
 set guioptions+=LlRrb

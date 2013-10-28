@@ -1,4 +1,4 @@
-noremap <D-t> :ProjectRootExe CommandT<CR>
+noremap <D-t> :CommandT<CR>
 nnoremap b :CommandTBuffer<cr>
 let g:CommandTMaxFiles=80000
 let g:CommandTMaxDepth=25

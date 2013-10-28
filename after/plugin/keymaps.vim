@@ -6,6 +6,9 @@ inoremap <d-bs> <esc>ddi
 inoremap <d-cr> <esc>o
 inoremap <d-s-cr> <esc>O
 
+nnoremap <d-]> >>
+nnoremap <d-[> <<
+
 " alt-tab
 nmap ,, <c-^>
 

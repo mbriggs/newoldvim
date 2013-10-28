@@ -1,4 +1,4 @@
-nmap <f8> :ToggleTagbar<cr>
+nmap <f8> :TagbarToggle<cr>
 
 let g:tagbar_type_markdown = {
 	\ 'ctagstype' : 'markdown',
