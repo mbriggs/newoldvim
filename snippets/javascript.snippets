@@ -1,5 +1,5 @@
 snippet req "require (js)" b
-require("$1");$0
+require("${1:path}", [${2:requirements}], function(${3:args}){$0});
 endsnippet
 
 snippet opt "assign an option (js)" b
@@ -7,7 +7,7 @@ this.${1:property} = options.$1;$0
 endsnippet
 
 snippet def "commonjs module define (js)" b
-define("${1:module name}", function(module){$0});
+define(${1:requirements}function(${2:args}){$0});
 endsnippet
 
 snippet con "console.log (js)" b

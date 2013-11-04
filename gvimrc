@@ -6,4 +6,7 @@ if has("gui_macvim")
   macmenu File.Print key=<nop>
   macmenu File.New\ Window key=<nop>
   macmenu File.New\ Tab key=<nop>
+  macmenu File.Save key=<nop>
+  macmenu File.Save\ As\.\.\. key=<nop>
+  macmenu Edit.Paste key=<nop>
 endif

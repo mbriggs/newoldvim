@@ -2,25 +2,28 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " ruby/rails
-Bundle 'tpope/vim-rails'
+" Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'tpope/vim-endwise'
 Bundle 'mikbe/rspec.vim'
+Bundle 'thoughtbot/vim-rspec'
 Bundle 'vim-ruby/vim-ruby'
 
 " web
-Bundle 'nono/vim-handlebars'
+Bundle 'mustache/vim-mode'
 Bundle 'teramako/jscomplete-vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'marijnh/tern_for_vim'
+
+" type support
 
 " utils
 Bundle 'Command-T'
 Bundle 'tpope/vim-eunuch'
 Bundle 'mbriggs/vim-themes'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'vim-scripts/TabIndent'
+" Bundle 'vim-scripts/TabIndent'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'trotter/autojump.vim'
 Bundle 'duff/vim-bufonly'
@@ -43,7 +46,7 @@ Bundle 'vim-scripts/VisIncr'
 Bundle 'vim-scripts/IndexedSearch'
 Bundle 'majutsushi/tagbar'
 Bundle 'bling/vim-airline'
-Bundle 'Valloric/YouCompleteMe'
+" Bundle 'Valloric/YouCompleteMe'
 Bundle 'SirVer/ultisnips'
 Bundle 'tpope/vim-dispatch'
 Bundle 'kana/vim-tabpagecd'
@@ -51,6 +54,8 @@ Bundle 'int3/vim-extradite'
 Bundle 'kana/vim-scratch'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
+Bundle 'Shougo/neocomplcache.vim'
+Bundle 'tpope/vim-ragtag'
 " Bundle 'mhinz/vim-signify'
 
 " support

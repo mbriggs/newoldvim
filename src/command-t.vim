@@ -1,4 +1,5 @@
-noremap <D-t> :CommandT<CR>
+nnoremap <D-t> :CommandT<CR>
+inoremap <D-t> <esc>:CommandT<CR>
 nnoremap b :CommandTBuffer<cr>
 let g:CommandTMaxFiles=80000
 let g:CommandTMaxDepth=25
